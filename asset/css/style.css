@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg: #10375C;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*Khi click vao link thi trang web se cuon dan dan xuong*/
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", serif;
+}
+
+/* Css dung chung */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(1170 - 48px);
+    /*Khi chieu dai cua trang web nho hon 1170 thi giup cho trang le trai va phai co kc 24px*/
+    margin: 0 auto;
+    /*can giua*/
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Member */
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.section__heading {
+    font-size: 5rem;
+    color: #10375C;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.btn {
+    --height: 60px;
+    line-height: var(--height);
+    border-radius: 99999999px;
+    min-width: 205px;
+    display: inline-block;
+    background: #2E80CE;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    height: var(--height);
+    padding: 0 20px;
+    text-align: center;
+    border: 1px solid #2E80CE;
+    margin-top: 38px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+.member-item__img-bg {
+    background: transparent;
+    padding-top: 28px;
+    overflow: hidden;/*an noi dung neu noi dai ra ngoai*/
+}
+.member-item__thumb:hover {
+    transform: scale(1.1);
+   
+}
+.member-item__thumb {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+.member-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75; /* 175% */
+}
+.member-item__title {
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
